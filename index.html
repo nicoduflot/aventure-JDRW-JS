@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation Javascript / Ecmascript 6 +</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="../js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="./class/Aventure.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../">Accueil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Introduction
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../introduction/index.html">Les bases JS</a></li>
+                            <li><a class="dropdown-item" href="../introduction/tableaux.html">Les tableaux</a></li>
+                            <li><a class="dropdown-item" href="../introduction/fonctions.html">Les Fonctions</a></li>
+                            <li><a class="dropdown-item" href="../introduction/destructuration.html">La
+                                    destructuration</a></li>
+                            <li><a class="dropdown-item" href="../introduction/storage.html">Storage</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Interactions DOM
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../dom/index.html">le DOM</a></li>
+                            <li><a class="dropdown-item" href="../dom/dom.html">Créer dans le DOM</a></li>
+                            <li><a class="dropdown-item" href="../dom/css.html">DOM et CSS</a></li>
+                            <li><a class="dropdown-item" href="../dom/data-attribute.html">Dataset</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            AJAX
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../ajax/index.html">AJAX</a></li>
+                            <li><a class="dropdown-item" href="../ajax/bdd.html">API JSON</a></li>
+                            <li><a class="dropdown-item" href="../ajax/promesse.html">Les promesses</a></li>
+                            <li><a class="dropdown-item" href="../ajax/fetch.html">Fetch</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../td/index.html">TD : Blog posts</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            POO
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../poo/index.html">POO</a></li>
+                            <li><a class="dropdown-item" href="../poo/collection.html">Collections</a></li>
+                            <li><a class="dropdown-item" href="../poo/iterator.html">Iterator</a></li>
+                            <li><a class="dropdown-item" href="../poo/module.html">Modules</a></li>
+                            <li><a class="dropdown-item" href="../poo/classe.html">Class</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-light text-center">
+        <h1>Formation Javascript / Ecmascript</h1>
+    </header>
+    <main class="container">
+        <section class="row">
+            <article class="col-lg-6">
+                <header>
+                    <h2>
+                        POO : À l'aventure
+                    </h2>
+                </header>
+                <main>
+                    <h3>Personnages</h3>
+                    <p>
+                        <label for="prenomP" class="form-label">
+                            Prénom :
+                        </label>
+                        <input type="text" id="prenomP" class="form-control" />
+                    </p>
+                    <p>
+                        <label for="nomP" class="form-label">
+                            Nom :
+                        </label>
+                        <input type="text" id="nomP" class="form-control" />
+                    </p>
+                    <p>
+                        <label for="classeP" class="form-label">
+                            Choix de la classe du personnage :
+                        </label>
+                        <select id="classeP" class="form-select">
+                            <option selected value="Aventurier">Aventurier</option>
+                            <option value="Voleur">Voleur</option>
+                            <option value="Guerrier">Guerrier</option>
+                            <option value="Mage">Mage</option>
+                        </select>
+                    </p>
+                    <p>
+                        <button class="btn btn-secondary btn-small" id="createP">
+                            Créer le personnage.
+                        </button>
+                    </p>
+                    <div id="ficheP">
+
+                    </div>
+                </main>
+            </article>
+            <article class="col-lg-6">
+                <header>
+                    <h2>
+                        &nbsp;
+                    </h2>
+                </header>
+                <main>
+                    <h3>Ennemi</h3>
+                    <p>
+                        <label for="prenomE" class="form-label">
+                            Prénom :
+                        </label>
+                        <input type="text" id="prenomE" class="form-control" />
+                    </p>
+                    <p>
+                        <label for="nomE" class="form-label">
+                            Nom :
+                        </label>
+                        <input type="text" id="nomE" class="form-control" />
+                    </p>
+                    <p>
+                        <button class="btn btn-secondary btn-small" id="createE">
+                            Générer l'ennemi aléatoirement
+                        </button>
+                    </p>
+                    <div id="ficheE">
+                        
+                    </div>
+                </main>
+            </article>
+        </section>
+    </main>
+    <footer class="bg-light">
+        <div class="container">
+            &copy;Dawan 05-2022
+        </div>
+    </footer>
+</body>
+
+</html>

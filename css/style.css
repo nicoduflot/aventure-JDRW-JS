@@ -1,0 +1,45 @@
+/* 
+appliquer un style à tous les paragraphe sauf celui avec l'id special
+*/
+
+p:not(#special){
+    /*color: darkgreen;*/
+}
+
+#showP{
+    /*color: darkred;
+    font-weight: bold;*/
+}
+
+.test{
+    color: red;
+}
+
+#carre{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin: 20px auto;
+    transition: transform 1s;
+}
+
+.left{
+    transform: translateX( calc( -1 * ( 100vw/2 - 100px ) ) );
+}
+
+.right{
+    transform: translateX( calc( 100vw/2 - 100px ) );
+}
+
+.blog-wrapper{
+    height: 300px;
+    overflow: auto;
+}
+
+.times{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.paragraphe-vert{
+    color: #aacc00;
+}
