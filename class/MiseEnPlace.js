@@ -139,3 +139,34 @@ PV (Actuels / Base) : ${personnage.pvActuel}/${personnage.pvBase}`;
 
     return lePerso;
 }
+
+export function jsonToTableObject(data){
+    let tHead = '<tr>';
+    let tBody = '';
+    let firstRound = true;
+    data.forEach((objet) => {
+        tBody += `<tr>`;
+        for(let key in objet){
+            if(objet.hasOwnProperty(key)){
+                tHead += (firstRound)? `<th>${key}</th>`: '';
+                tBody += `<td>${objet[key]}</td>`;
+            }
+        }
+        tBody += '</tr>';
+        firstRound = false;
+    });
+    tHead += '</tr>';
+    return [tHead, tBody];
+}
+
+export function setListe(thead = '#tabArme > thead', tbody = '#tabArme > tbody', liste = 'armes'){
+    let tabTHead = document.querySelector(thead);
+    let tabTBody = document.querySelector(tbody);
+    fetch(`../json/${liste}.json`)
+    .then(response => response.json())
+    .then(data => {
+        let tabResult = jsonToTableObject(data);
+        tabTHead.innerHTML = tabResult[0];
+        tabTBody.innerHTML = tabResult[1];
+    })
+}

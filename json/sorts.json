@@ -1,0 +1,116 @@
+[
+    {
+        "nom": "Colère",
+        "mana": 2,
+        "effet": "Double les dégâts de base pendant 1d6 tours",
+        "cout": 10
+    },
+    {
+        "nom": "Voie du guerrier",
+        "mana": 2,
+        "effet": "2 manas par dé relancé en attaque.",
+        "cout": 10
+    },
+    {
+        "nom": "Voie du filou",
+        "mana": 2,
+        "effet": "2 manas par dé relancé pour défendre",
+        "cout": 10
+    },
+    {
+        "nom": "boule de feu",
+        "mana": 2,
+        "effet": "4 dégâts",
+        "cout": 10
+    },
+    {
+        "nom": "peau de pierre",
+        "mana": 2,
+        "effet": "-2 dégâts, 1d6 tour",
+        "cout": 10
+    },
+    {
+        "nom": "Détection souterraine",
+        "mana": 2,
+        "effet": "5 mètres par niveau, détecte soit les espaces, soit les présences derrière une paroi (mur, caverne, porte, etc.).",
+        "cout": 10
+    },
+    {
+        "nom": "Premiers soins",
+        "mana": 4,
+        "effet": "Permet de relever un personnage du K.O. (dans les conditions normales du K.O.)",
+        "cout": 20
+    },
+    {
+        "nom": "Soins",
+        "mana": 2,
+        "effet": "2 PV rendu à la cible au contact ou 2 PV régénérés",
+        "cout": 10
+    },
+    {
+        "nom": "Mur de flammes",
+        "mana": 4,
+        "effet": "<em>4 mana pour 1m²</em>. Durée 1d6+1 tours à moins que le joueur ne l’annule (gratuit). Un personnage qui tente de traverser le mur de flamme ou qui se trouve sur le chemin du mur de flamme doit obtenir au moins trois réussite avec le corps pour éviter d’être blessé. Si c’est raté il prend 4 dégâts qui ignorent les armures conventionnelles.",
+        "cout": 20
+    },
+    {
+        "nom": "Mur de terre",
+        "mana": 4,
+        "effet": "<em>4 manas pour 1m²</em>. Crée un mur de terre qui possède 4 points de structure et une défense de 4 réussites, qui descend d’une réussite tous les 2 tours. A la fin, le mur reste debout mais il faut arriver au bout de ses points de structure pour le faire disparaître.",
+        "cout": 20
+    },
+    {
+        "nom": "Court comme le vent",
+        "mana": 2,
+        "effet": "Le personnage court au prix d’un point d’action seulement. 1d6 tour",
+        "cout": 10
+    },
+    {
+        "nom": "Fuite",
+        "mana": 2,
+        "effet": "Le personnage peut s’échapper d’un corps à corps sans subir d’attaque gratuite.",
+        "cout": 10
+    },
+    {
+        "nom": "Eclair",
+        "mana": 2,
+        "effet": "Lance un éclair vers la cible, 4 dégâts",
+        "cout": 10
+    },
+    {
+        "nom": "Protection",
+        "mana": 2,
+        "effet": "Barrière magique absorbant 4 dégâts durant 1d6 tour",
+        "cout": 20
+    },
+    {
+        "nom": "Attaque rapide",
+        "mana": 2,
+        "effet": "Faire deux attaque de suite sans subir de malus",
+        "cout": 10
+    },
+    {
+        "nom": "Attaque surprise",
+        "mana": 0,
+        "effet": "Quand le personnage attaque par surprise, il double ses dégâts",
+        "cout": 20
+    },
+    {
+        "nom": "Dissimulation",
+        "mana": 2,
+        "effet": "le sort dure tant que le personnage n’est pas repéré. Pour repérer le lanceur, on oppose un jet d'esprit entre le lanceur et celui qui tente de le repérer, le nobre de réussite du lanceur doit être inférieur pour dissiper le sort. Les personnages ne voient pas le personnage même quand il les attaque, il peut faire relancer un des dés d’esprit utilisé pour le repérer, une fois par tour.",
+        "cout": 30
+    },
+    {
+        "nom": "Guérison",
+        "mana": 2,
+        "effet": "Regagner 1d6+1 PV, sur soi ou sur un autre personnage par contact.",
+        "cout": 40
+    },
+    {
+        "nom": "Parade",
+        "mana": 2,
+        "effet": "2 mana par dé relancé pour se défendre.",
+        "cout": 1
+    }
+]

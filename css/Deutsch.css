@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Deutsch';
+    src: url('../fonts/Deutsch.eot');
+    src: url('../fonts/Deutsch.eot') format('embedded-opentype'),
+         url('../fonts/Deutsch.woff2') format('woff2'),
+         url('../fonts/Deutsch.woff') format('woff'),
+         url('../fonts/Deutsch.ttf') format('truetype'),
+         url('../fonts/Deutsch.svg#Deutsch') format('svg');
+}

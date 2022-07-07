@@ -1,8 +1,10 @@
 // les armes de nos aventurier
 export default class Arme{
-    constructor(nom = 'Mains nues', niveauDegats = 1){
+    constructor(nom = 'Mains nues', niveauDegats = 1, nbMains = 1, cout = 0){
         this.nom = nom;
         this.niveauDegats = niveauDegats;
+        this.nbMains = nbMains;
+        this.cout = cout;
         this.enchantement = null;
     }
 

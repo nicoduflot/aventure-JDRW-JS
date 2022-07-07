@@ -5,7 +5,7 @@ function loaded(callable){
 }
 
 function s(selector){
-    return document.querySelector(selector);
+    return s(selector);
 }
 
 function sAll(selector){

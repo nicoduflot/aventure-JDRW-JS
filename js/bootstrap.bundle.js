@@ -67,7 +67,7 @@
     const selector = getSelector(element);
 
     if (selector) {
-      return document.querySelector(selector) ? selector : null;
+      return s(selector) ? selector : null;
     }
 
     return null;
@@ -75,7 +75,7 @@
 
   const getElementFromSelector = element => {
     const selector = getSelector(element);
-    return selector ? document.querySelector(selector) : null;
+    return selector ? s(selector) : null;
   };
 
   const getTransitionDurationFromElement = element => {
@@ -124,7 +124,7 @@
     }
 
     if (typeof object === 'string' && object.length > 0) {
-      return document.querySelector(object);
+      return s(object);
     }
 
     return null;

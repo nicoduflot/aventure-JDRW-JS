@@ -1,0 +1,80 @@
+[
+    {
+        "nom": "Hache de Barbare",
+        "nbMain": 2,
+        "degats": 5,
+        "cout": 15
+    },
+    {
+        "nom": "Hache à deux main lourde",
+        "nbMain": 2,
+        "degats": 8,
+        "cout": 30
+    },
+    {
+        "nom": "Épée de guerrier",
+        "nbMain": 1,
+        "degats": 4,
+        "cout": 8
+    },
+    {
+        "nom": "bâton renforcé acier",
+        "nbMain": 2,
+        "degats": 3,
+        "cout": 8
+    },
+    {
+        "nom": "dague en acier",
+        "nbMain": 1,
+        "degats": 3,
+        "cout": 5
+    },
+    {
+        "nom": "dague effilée",
+        "nbMain": 1,
+        "degats": 3,
+        "cout": 5
+    },
+    {
+        "nom": "dague en fer",
+        "nbMain": 1,
+        "degats": 2,
+        "cout": 3
+    },
+    {
+        "nom": "Épée en fer",
+        "nbMain": 1,
+        "degats": 3,
+        "cout": 5
+    },
+    {
+        "nom": "Bâton de glace",
+        "nbMain": 2,
+        "degats": 3,
+        "cout": 15
+    },
+    {
+        "nom": "Arc court",
+        "nbMain": 2,
+        "degats": 3,
+        "cout": 15
+    },
+    {
+        "nom": "Arc long",
+        "nbMain": 2,
+        "degats": 5,
+        "cout": 25
+    },
+    {
+        "nom": "Arc composite",
+        "nbMain": 2,
+        "degats": 8,
+        "cout": 35
+    },
+    {
+        "nom": "Arbalète",
+        "nbMain": 2,
+        "degats": 11,
+        "cout": 45
+    }
+]

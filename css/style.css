@@ -1,3 +1,5 @@
+@import url('./Deutsch.css');
+
 /* 
 appliquer un style à tous les paragraphe sauf celui avec l'id special
 */
@@ -42,4 +44,13 @@ p:not(#special){
 
 .paragraphe-vert{
     color: #aacc00;
+}
+
+body > header{
+    font-family: 'Deutsch';
+}
+
+#armes, #sorts, #equipements{
+    height: 250px;
+    overflow: auto;
 }

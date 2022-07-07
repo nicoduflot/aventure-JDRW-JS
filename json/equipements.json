@@ -1,0 +1,137 @@
+[
+    {
+        "nom": "viande séchée",
+        "effet": "Rend 2 PV",
+        "cout": 1
+    },
+    {
+        "nom": "ration",
+        "effet": "Rend 2 PV",
+        "cout": 1
+    },
+    {
+        "nom": "petite potion de soin",
+        "effet": "Rend 2 PV",
+        "cout": 1
+    },
+    {
+        "nom": "moyenne potion de soin",
+        "effet": "Rend 4 PV",
+        "cout": 3
+    },
+    {
+        "nom": "grande potion de soin",
+        "effet": "Rend 2 PV",
+        "cout": 8
+    },
+    {
+        "nom": "petite potion de mana",
+        "effet": "Rend 2 mana",
+        "cout": 1
+    },
+    {
+        "nom": "moyenne potion de mana",
+        "effet": "Rend 4 mana",
+        "cout": 3
+    },
+    {
+        "nom": "grande potion de mana",
+        "effet": "Rend 2 mana",
+        "cout": 8
+    },
+    {
+        "nom": "briquet",
+        "effet": "Fait du feu",
+        "cout": 5
+    },
+    {
+        "nom": "torche",
+        "effet": "éclaire sur 16m² pendant 2h",
+        "cout": 1
+    },
+    {
+        "nom": "Piège à loup",
+        "effet": "4 dégâts, bloquant",
+        "cout": 5
+    },
+    {
+        "nom": "Armure légère",
+        "effet": "-2 dégâts",
+        "cout": 10
+    },
+    {
+        "nom": "Livre de sort",
+        "effet": "Cout indiqué vide. Permet d'acheter et d'y inscrire des sorts non automatiques.",
+        "cout": 20
+    },
+    {
+        "nom": "Kit du filou",
+        "effet": "réussite automatique ouverture serrure ou désamorçage piège",
+        "cout": 20
+    },
+    {
+        "nom": "lot d’ingrédients divers",
+        "effet": "permet de préparer l’équivalent d’une grande potion",
+        "cout": 5
+    },
+    {
+        "nom": "parchemin magique",
+        "effet": "lance gratuitement le sort inscrit, détruit après utilisation",
+        "cout": 15
+    },
+    {
+        "nom": "Pierre à aiguiser",
+        "effet": "utilisation unique, une action, annule l’armure non-magique à la prochaine attaque",
+        "cout": 5
+    },
+    {
+        "nom": "Corde normale",
+        "effet": "Fait des trucs de corde, resistance de 3 dés, coût pour 2 mètres",
+        "cout": 1
+    },
+    {
+        "nom": "Corde résistante",
+        "effet": "Fait des trucs de corde, resistance de 6 dés, coût pour 2 mètres",
+        "cout": 10
+    },
+    {
+        "nom": "Corde elfique",
+        "effet": "Fait des trucs de corde, incassable, coût pour 2 mètres",
+        "cout": 100
+    },
+    {
+        "nom": "Petite pierre des âmes",
+        "effet": "donne 10 charges à un objet magique utilisant des charges",
+        "cout": 10
+    },
+    {
+        "nom": "Moyenne pierre des âmes",
+        "effet": "donne 20 charges à un objet magique utilisant des charges",
+        "cout": 20
+    },
+    {
+        "nom": "Grande pierre des âmes",
+        "effet": "donne 30 charges à un objet magique utilisant des charges",
+        "cout": 30
+    },
+    {
+        "nom": "Livre apothicaire",
+        "effet": "contient une recette de potion, possibilité d’écrire d’autres recettes",
+        "cout": 20
+    },
+    {
+        "nom": "bouclier petit",
+        "effet": "+ 1dé en défense",
+        "cout": 10
+    },
+    {
+        "nom": "moyen petit",
+        "effet": "+ 2dé en défense",
+        "cout": 20
+    },
+    {
+        "nom": "grand petit",
+        "effet": "+ 3dé en défense",
+        "cout": 40
+    }
+]

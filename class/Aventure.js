@@ -100,3 +100,8 @@ document.querySelector('#createE').addEventListener('click', function(){
     }
     document.querySelector('#ficheE').innerHTML = content;
 });
+
+Creation.setListe('#tabArme > thead', '#tabArme > tbody', 'armes');
+Creation.setListe('#tabSorts > thead', '#tabSorts > tbody', 'sorts');
+Creation.setListe('#tabEquipements > thead', '#tabEquipements > tbody', 'equipements');
+//tabEquipements
