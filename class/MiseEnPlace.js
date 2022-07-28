@@ -50,7 +50,7 @@ ${personnage.prenom} a récupéré ${pvRendu} PV suite à ${evenement}
 Il a maintenant ${personnage.pvActuel} PV`;
 }
 
-export function fichePersoHTML(personnage){
+export function fichePersoHTML(personnage, type){
     let tabPerso = cE('table', ['class', 'table']);
     /* créer le thead */
     let tabPersoThead = cE('thead');
@@ -60,7 +60,8 @@ export function fichePersoHTML(personnage){
     let tabPersoThPrenom = cE('th');
     tabPersoThPrenom.textContent = 'Prénom :';
     let tabPersoThClasse = cE('th');
-    tabPersoThClasse.textContent = 'Classe :';
+    let tabPersoThClasseTextContent = document.createTextNode('Classe :');
+    tabPersoThClasse.append(tabPersoThClasseTextContent);
     tabPersoTrHead.append(tabPersoThNom, tabPersoThPrenom, tabPersoThClasse);
     tabPersoThead.append(tabPersoTrHead);
 
@@ -69,29 +70,50 @@ export function fichePersoHTML(personnage){
     /* ligne nom, prénom, classe */
     let tabPersoTrTBody = cE('tr');
     let tabPersoTBodyTdNom = cE('td');
-    tabPersoTBodyTdNom.textContent =  personnage.nom;
+    let tabPersoTBodyTdNomTextContent =  document.createTextNode(personnage.nom);
+    tabPersoTBodyTdNom.append(tabPersoTBodyTdNomTextContent);
+
     let tabPersoTBodyTdPrenom = cE('td');
-    tabPersoTBodyTdPrenom.textContent = personnage.prenom;
+    let tabPersoTBodyTdPrenomTextContent = document.createTextNode(personnage.prenom);
+    tabPersoTBodyTdPrenom.append(tabPersoTBodyTdPrenomTextContent);
+
     let tabPersoTBodyTdClasse = cE('td');
-    tabPersoTBodyTdClasse.textContent = 'Classe :';
+    let tabPersoTBodyTdClasseTextContent = document.createTextNode(`Classe : ${personnage.constructor.name}`);
+    tabPersoTBodyTdClasse.append(tabPersoTBodyTdClasseTextContent);
+
     tabPersoTrTBody.append(tabPersoTBodyTdNom, tabPersoTBodyTdPrenom, tabPersoTBodyTdClasse);
+
     tabPersoTBody.append(tabPersoTrTBody);
+    
     /* ligne boutons d'action attaquer et soigner */
     let tabPersoTrAction = cE('tr');
     let tabPersoTActionTdattaque = cE('td');
-    let attaqueButton = cE('button', ['data-action', 'attaque'], ['disabled', 'disabled']);
-    attaqueButton.textContent = 'Attaquer'
-    tabPersoTActionTdattaque.textContent = attaqueButton;
+    let attaqueButton = cE('button', ['data-action', 'attaque'], ['disabled', 'disabled'], ['class', 'btn btn-primary']);
+    let attaqueButtonTextContent = document.createTextNode('Attaquer');
+    attaqueButton.appendChild(attaqueButtonTextContent);
+    tabPersoTActionTdattaque.append(attaqueButton);
+
     let tabPersoTActionTdSpacer = cE('td');
-    tabPersoTActionTdSpacer.textContent = '';
+    let tabPersoTActionTdSpacerTextContent = document.createTextNode('');
+    tabPersoTActionTdSpacer.append(tabPersoTActionTdSpacerTextContent);
+
     let tabPersoTActionTdSoin = cE('td');
-    let soinButton = cE('button', ['data-action', 'soin'], ['disabled', 'disabled']);
-    tabPersoTActionTdSoin.textContent = soinButton;
+    let soinButton = cE('button', ['data-action', 'soin'], ['class', 'btn btn-success']);
+    soinButton.addEventListener('click', function(){
+        console.log(`${personnage.prenom} ${personnage.nom} se soigne`);
+    });
+    let soinButtonTextContent = document.createTextNode('Se soigner');
+    soinButton.append(soinButtonTextContent);
+    tabPersoTActionTdSoin.append(soinButton);
+
     tabPersoTrAction.append(tabPersoTActionTdattaque, tabPersoTActionTdSpacer, tabPersoTActionTdSoin);
     tabPersoTBody.append(tabPersoTrAction);
 
     tabPerso.append(tabPersoThead, tabPersoTBody);
     console.log(tabPerso);
+    console.log(`#${type} table`);
+    s(`#${type} table`).append(tabPerso);
+    /*
     let html = '';
     html += `
 <table class="table">
@@ -125,7 +147,8 @@ export function fichePersoHTML(personnage){
     </tbody>
 </table>
     `;
-    return html;
+    */
+    //return html;
 }
 
 export function fichePerso(personnage){

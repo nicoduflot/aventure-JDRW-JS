@@ -64,7 +64,7 @@ document.querySelector('#createP').addEventListener('click', function(){
     let divAlert = cE('div', ['class', 'alert alert-warning alert-dismissible fade show'], ['role', 'alert']);
     let strongAlert = cE('strong');
     strongAlert.textContent = 'Attention';
-    let messAlert = 'Votre personnage n\'est pas complet';
+    let messAlert = document.createTextNode('Votre personnage n\'est pas complet');
     let buttonAlert = cE('button', ['class', 'btn-close'], ['data-bs-dismiss', 'alert'], ['aria-label', 'Close']);
     divAlert.append(strongAlert, messAlert, buttonAlert);
     console.log(divAlert);
@@ -76,9 +76,10 @@ document.querySelector('#createP').addEventListener('click', function(){
 </div>        
         `;
     }else{
-        content = Creation.fichePersoHTML(personnage);
+        //content = Creation.fichePersoHTML(personnage);
+        Creation.fichePersoHTML(personnage, 'ficheP');
     }
-    document.querySelector('#ficheP').innerHTML = content;
+    //document.querySelector('#ficheP').innerHTML = content;
 });
 
 document.querySelector('#createE').addEventListener('click', function(){
@@ -96,7 +97,8 @@ document.querySelector('#createE').addEventListener('click', function(){
 </div>        
         `;
     }else{
-        content = Creation.fichePersoHTML(ennemi);
+        //content = Creation.fichePersoHTML(ennemi);
+        Creation.fichePersoHTML(ennemi, 'ficheE');
     }
     document.querySelector('#ficheE').innerHTML = content;
 });
